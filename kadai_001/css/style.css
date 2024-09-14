@@ -100,7 +100,8 @@ li, p {
 
 #works-flex > div {
   width: 240px;
-  margin: 0 6px;
+  margin: 0 10px;
+  padding: 0 0 60px;
 }
 
 .img-box > img {
@@ -108,28 +109,32 @@ li, p {
 }
 
 /* TOPに戻るボタン */
-#page-top a {
+#page-top {
   position: fixed;
   background-color: #000000;
   bottom: 38px;
   right: 20px;
   color: #ffffff;
   text-align: center;
-  text-decoration: none;
   padding: 28px 24px;
   border-radius: 50%;
   font-size: 18px;
+  border: 0px
   /* display: none; */
 }
 
-/* ウィンドウモーダル〜画像拡大 */
-.img-box a:hover {
-  opacity: 0.8;
+#page-top a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #000000;
 }
 
-.img-box a img {
+/* カルーセル */
+.carousel img {
   width: 100%;
 }
+
+/* ウィンドウモーダル〜画像拡大 */
 
 .modal {
   position: fixed;
@@ -164,7 +169,8 @@ li, p {
 /* フッター */
 footer > div {
   text-align: center;
-  margin-top: 80px;
+  padding: 0 0 20px;
+  font-size: 18px;
 }
 
 /* SP表示用 */
@@ -190,6 +196,7 @@ footer > div {
 
   #works-flex > div {
     width: 100%;
+    margin: 0;
   }
 
   .works-box > p {

@@ -12,11 +12,12 @@ $(function () {
 
   // カルーセル
   $('.carousel').slick({
-    autoplay: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
     dots: true,
     isfinite: true,
     fade: true,
-    speed: 2000,
+    speed: 1000,
     arrows: false,
   });
 
@@ -70,7 +71,6 @@ $(function () {
   // 画像をクリックしたときにモーダルで拡大表示する
   $('.works-img').click(function(){
     const mImgSrc = $(this).attr('src');
-    console.log(mImgSrc);
     $('.modalImg').attr('src', mImgSrc);
     $('.modal').fadeIn(300);
     $('body,html').css('overflow-y','hidden');
