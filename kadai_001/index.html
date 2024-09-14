@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>MyProfile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+
+<body>
+<header>
+  <div>
+    <h1 class="header-title"><a href="index.html">MyProfile</a></h1>
+  </div>
+  <nav>
+    <ul class="menu" id="menu">
+      <li><a href="#about" class="header-title">About</a></li>
+      <li><a href="#works" class="header-title">Works</a></li>
+    </ul>
+  </nav>
+</header>
+
+<article>
+  <!-- <div id="mainvisual">
+    <img src="images/main.png" alt="一眼レフカメラ">
+  </div> -->
+  <section id="carousel-section">
+    <div class="carousel">
+      <div>
+        <img src="images/main.png" class="carouselImg">
+      </div>
+      <div>
+        <img src="images/main2.png" class="carouselImg">
+      </div>
+      <div>
+        <img src="images/main3.png" class="carouselImg">
+      </div>
+    </div>
+</section>
+  <section id="about" class="section-block">
+      <h2>About</h2>
+      <div id="about-flex">
+        <div class="about-box-img">
+          <img src="images/about.png" alt="ポートフォリオ">
+        </div>
+        <div id="about-box">
+          <h3>Kazuki Asahina</h3>
+          <ul>
+            <li>25歳 長野県佐久市出身</li>
+            <li>ソフトウェア業界でマーケティングに従事</li>
+            <li>趣味はカメラ、愛機はCanon</li>
+            <li>自然を撮影するのが好きで、海や山によく行く</li>
+          </ul>
+        </div>
+      </div>
+  </section>
+
+  <section id="works" class="section-block">
+      <h2>Works</h2>
+      <div id="works-flex">
+        <div class="works-box">
+          <div class="img-box">
+            <img class="works-img" src="images/works1.png" alt="新潟の日本海">
+          </div>
+          <p>新潟に訪れた際に、日本海の雄大さに魅了されて撮影した1枚</p>
+        </div>
+        <div class="works-box">
+          <div class="img-box">
+            <img class="works-img" src="images/works2.png" alt="御嶽山">
+          </div>
+          <p>地元長野の木曽町から撮影した、冠雪した御嶽山</p>
+        </div>
+        <div class="works-box">
+          <div class="img-box">
+            <img class="works-img" src="images/works3.png" alt="京都の町並み">
+          </div>
+          <p>京都で撮影した、明け方の古き良き日本の町並み</p>
+        </div>
+      </div>
+  </section>
+</article>
+<button id="page-top"><a href="#">TOP</a></button>
+<div class="modal">
+    <img class="modalImg" src="">
+    <span class="modal-button">✖</span>
+</div>
+<footer>
+  <div>&copy; MyProfile. All rights reserved.</div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+</html>

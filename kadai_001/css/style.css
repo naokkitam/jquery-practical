@@ -1,0 +1,203 @@
+body {
+  /* max-width: 1080px; */
+  margin: 0 auto;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1080px;
+  margin: 15px auto;
+}
+
+header h1 {
+  border: 1px solid #000000;
+  padding: 1px 19px;
+  margin-left: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: #000000;
+}
+
+nav ul {
+  display: flex;
+  padding-left: 0;
+}
+
+nav li {
+  margin: 0 20px;
+  list-style: none;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+/* メインビジュアル */
+#mainvisual > img {
+  width: 100%;
+}
+
+/* 見出し */
+h2 {
+  font-size: 34px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+li, p {
+  font-size: 18px;
+}
+
+/* セクションフェードイン */
+.section-block {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.active-section {
+  opacity: 1;
+}
+
+/* About */
+#about-flex {
+  display: flex;
+  max-width: 1080px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 10px;
+  align-items: center;
+}
+
+#about-flex > div {
+  width: 50%;
+}
+
+.about-box-img {
+  text-align: center;
+}
+
+.about-box-img > img {
+  border-radius: 50%;
+}
+
+/* Works */
+#works-flex {
+  display: flex;
+  justify-content: center;
+  max-width: 1080px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+#works-flex > div {
+  width: 240px;
+  margin: 0 6px;
+}
+
+.img-box > img {
+  width: 100%;
+}
+
+/* TOPに戻るボタン */
+#page-top a {
+  position: fixed;
+  background-color: #000000;
+  bottom: 38px;
+  right: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  padding: 28px 24px;
+  border-radius: 50%;
+  font-size: 18px;
+  /* display: none; */
+}
+
+/* ウィンドウモーダル〜画像拡大 */
+.img-box a:hover {
+  opacity: 0.8;
+}
+
+.img-box a img {
+  width: 100%;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+.modalImg {
+  position: absolute;
+  width: 80%;
+  max-width: 800px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.modal-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #ffffff;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+/* フッター */
+footer > div {
+  text-align: center;
+  margin-top: 80px;
+}
+
+/* SP表示用 */
+@media screen and (max-width:767px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  nav a {
+    font-size: 21px;
+  }
+
+  nav li {
+    margin: 0 10px;
+  }
+  
+  h3 {
+    margin: 12px 12px;
+  }
+  #about-flex > div {
+    width: 100%;
+  }
+
+  #works-flex > div {
+    width: 100%;
+  }
+
+  .works-box > p {
+    text-align: center;
+    margin: 0 0 40px 0;
+  }
+
+  footer > div {
+    margin-top: 40px;
+  }
+}
